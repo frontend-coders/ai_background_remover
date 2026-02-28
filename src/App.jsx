@@ -1,6 +1,6 @@
 import { useMemo, useState } from "react";
 
-const API_BASE = "https://aibgremover-backend.onrender.com";
+const API_BASE = import.meta.env.VITE_API_BASE || "https://aibgremover-backend.onrender.com";
 
 export default function App() {
   const [file, setFile] = useState(null);
